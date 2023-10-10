@@ -5,4 +5,7 @@ vim.keymap.set('n', '<leader>pg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>pp', builtin.oldfiles, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>vh', builtin.help_tags, {})
-
+vim.keymap.set("n", "<leader>pd", builtin.diagnostics, {})
+vim.keymap.set("n", "<leader>pws", builtin.lsp_workspace_symbols, {})
+vim.keymap.set("n", "<leader>pds", builtin.lsp_document_symbols, {})
+vim.keymap.set("n", "<leader>pdws", builtin.lsp_dynamic_workspace_symbols, {})
