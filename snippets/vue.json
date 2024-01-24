@@ -1,0 +1,24 @@
+{
+  "Vue component with props": {
+    "prefix": "vcomp",
+    "body": [
+      "<script setup>\n",
+      "\tdefineProps({\n",
+      "\t\t$0\n",
+      "\t})",
+      "\tdefineEmits([\n",
+      "\t\t$1\n",
+      "\t])",
+      "</script>\n",
+      "<template>\n",
+      "\t<div>\n",
+      "\t$3\t",
+      "\t</div>\n",
+      "</template>\n",
+      "<style lang='scss' module>\n",
+      "</style>\n"
+    ],
+    "description": "A Vue component with props",
+    "scope": "vue"
+  }
+}

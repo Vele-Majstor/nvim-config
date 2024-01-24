@@ -1,0 +1,19 @@
+{
+  "JSX component with props": {
+    "prefix": "rcomp",
+    "body": [
+      "type Props = {\n",
+      "}\n",
+      "function $TM_FILENAME_BASE({}: Props): ${1:JSX.Element} {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t)",
+      "}\n",
+      "export default $TM_FILENAME_BASE"
+    ],
+    "description": "A React component with props",
+    "scope": "typescriptreact"
+  }
+}
