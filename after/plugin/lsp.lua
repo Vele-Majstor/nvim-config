@@ -13,7 +13,7 @@ local cmp = require("cmp")
 local cmp_action = require("lsp-zero").cmp_action()
 
 require("luasnip.loaders.from_vscode").lazy_load()
-require("luasnip.loaders.from_vscode").lazy_load({ paths =  "~/.config/nvim/snippets"  })
+require("luasnip.loaders.from_vscode").lazy_load({ paths = "~/.config/nvim/snippets" })
 
 cmp.setup({
 	mapping = {
@@ -24,13 +24,13 @@ cmp.setup({
 	},
 	snippet = {
 		expand = function(args)
-			require('luasnip').lsp_expand(args.body)
+			require("luasnip").lsp_expand(args.body)
 		end,
 	},
 	sources = cmp.config.sources({
-		{ name = 'nvim_lsp' },
-		{ name = 'luasnip' },
+		{ name = "nvim_lsp" },
+		{ name = "luasnip" },
 	}, {
-		{ name = 'buffer' },
+		{ name = "buffer" },
 	}),
 })
