@@ -46,11 +46,14 @@ return require("packer").startup(function(use)
 	})
 	use("saadparwaiz1/cmp_luasnip")
 	use("rafamadriz/friendly-snippets")
+    use("JoosepAlviste/nvim-ts-context-commentstring")
 	use({
 		"numToStr/Comment.nvim",
 		config = function()
-			require("Comment").setup()
-		end,
+			require("Comment").setup({
+                pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook(),
+            })
+		end
 	})
 	use("christoomey/vim-tmux-navigator")
 end)
